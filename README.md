@@ -1,2 +1,4 @@
-# BONES-Backend
-Telegram MiniApp - BONES 的完整后端源码
+# TOPTAP
+Telegram MiniApp TOPTAP Game For Deployed IN PlatON To Help TOPOS Wallet PR and Marketing
+
+Refactoring with egg.is

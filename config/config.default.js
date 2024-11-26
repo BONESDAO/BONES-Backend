@@ -27,15 +27,15 @@ module.exports = appInfo => {
     // 单数据库信息配置
     client: {
       // host
-      host: "xxx.xxx.xxx.xxx",
+      host: "124.156.217.108",
       // 端口号
-      port: "0",
+      port: "3306",
       // 用户名
-      user: "xxx",
+      user: "root",
       // 密码
-      password: "xxx",
+      password: "wmzcl1gpt@@@",
       // 数据库名
-      database: "xxx"
+      database: "bones"
     },
     // 是否加载到 app 上，默认开启
     app: true,

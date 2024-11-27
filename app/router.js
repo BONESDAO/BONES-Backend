@@ -32,6 +32,11 @@ module.exports = app => {
   // 用户完成任务
   router.post(ROOT_URL + "/task/complete", controller.task.complete);
 
+  // 获取答题列表
+  router.get(ROOT_URL + "/qa/list", controller.qa.list);
+  // 用户提交答案
+  router.post(ROOT_URL + "/qa/complete", controller.qa.complete);
+
   // 获取该验证码邀请过的用户
   router.get(ROOT_URL + "/invite/getInvitedUsers", controller.invite.getInvitedUsers);
 };

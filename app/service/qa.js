@@ -37,12 +37,11 @@ class QaService extends Service {
   async complete() {
     const { ctx, app } = this;
     const { mysql } = app;
-    const { id, qid, skull, isCorrect } = this.ctx.request.body;
+    const { id, qid, skull } = this.ctx.request.body;
 
     console.log(id);
     console.log(qid);
     console.log(skull);
-    console.log(isCorrect);
 
     if (!id) {
       ctx.status = 400;
@@ -91,12 +90,7 @@ class QaService extends Service {
       }
       return;
     }
-    const newSkull = user.skull;
-    if(isCorrect) {
-      newSkull = skull + user.skull;
-    } else {
-      newSkull = user.skull;
-    }
+    const newSkull = skull + user.skull;
     const userUpdate = {
       skull: newSkull
     }
